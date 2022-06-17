@@ -21,21 +21,6 @@
     margin: auto;
     padding-inline:1em;
 }
-@media screen and (max-width:576px){
-    .container{
-        width: 100%;
-    }
-}
-@media screen and (min-width:576px){
-    .container{
-        width: 540px;
-    }
-}
-@media screen and (min-width:768px){
-    .container{
-        width: 720px;
-    }
-}
 header .main-nav{
     background-color: lightpink;
     display: flex;
@@ -93,6 +78,7 @@ nav ul.nav-link li a{
 main{
     height: calc(100vh - 100px);
     overflow: auto;
+    padding-block: 1em;
 }
 footer {
     background-color: lightpink;
@@ -100,4 +86,38 @@ footer {
     justify-content: center;
     align-items: center;
     height: 50px;
+}
+
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+    }
+    .nav-link{
+        display: none;
+    }
+    .hamburger{
+        display: inherit;
+    }
+}
+@media screen and (min-width:576px){
+    .container{
+        width: 540px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .hamburger{
+        display: inherit;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        width: 720px;
+    }
+    .nav-link{
+        display: inherit;
+    }
+    .hamburger{
+        display: none;
+    }
 }
