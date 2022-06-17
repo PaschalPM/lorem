@@ -79,6 +79,7 @@ nav ul.nav-link li a{
 main{
     overflow: auto;
     padding-block: 1em;
+    min-height:calc(100vh - 100px);
 }
 footer {
     background-color: rgb(190, 96, 96);
