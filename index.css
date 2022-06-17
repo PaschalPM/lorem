@@ -12,9 +12,9 @@
 }
 .logo{
     font-size: 1.5em;
-    color: slateblue;
+    color: white;
     font-weight: 700;
-    text-shadow: 1px 3px 1px #bbb;
+    text-shadow: 1px 3px 1px rgb(190, 96, 96);
 }
 .container{
     display: block;
@@ -22,7 +22,7 @@
     padding-inline:1em;
 }
 header .main-nav{
-    background-color: lightpink;
+    background-color: rgb(190, 96, 96);
     display: flex;
     align-items: center;
     height: 50px;
@@ -40,7 +40,8 @@ nav ul.nav-link li a{
 .drawer{
     background-color: white;
     contain: content;
-    height: 0;
+    height: 0px;
+    transition: height 1s linear 0s;
 }
 
 .drawer li{
@@ -55,10 +56,10 @@ nav ul.nav-link li a{
     text-align: center;
 }
 .drawer li:hover{
-    background-color: pink;
+    background-color: rgb(244, 209, 209);
 }
 .drawer li a:hover{
-    color: white;
+    color: rgb(190, 96, 96);
 }
 
 .hamburger{
@@ -76,16 +77,16 @@ nav ul.nav-link li a{
     text-decoration: underline;
 }
 main{
-    height: calc(100vh - 100px);
     overflow: auto;
     padding-block: 1em;
 }
 footer {
-    background-color: lightpink;
+    background-color: rgb(190, 96, 96);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
+    color: white;
 }
 .hamburger, .exit{
     all: unset;
@@ -125,6 +126,9 @@ footer {
         display: inherit;
     }
     .hamburger{
+        display: none;
+    }
+    .drawer{
         display: none;
     }
 }
