@@ -40,8 +40,8 @@ nav ul.nav-link li a{
 .drawer{
     background-color: white;
     contain: content;
-    height: 0px;
-    transition: height 1s linear 0s;
+    max-height: 0px;
+    transition: max-height .5s linear 0s;
 }
 
 .drawer li{

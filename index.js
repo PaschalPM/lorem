@@ -10,12 +10,12 @@ hamburger.addEventListener("click",()=>{
     if(drawerToggleFlag){
         hamburger.innerHTML = ExitSVG()
         drawer.style.borderBottom = "1px ridge pink"
-        drawer.style.height = "160px"
+        drawer.style.maxHeight = "160px"
     }
     else{
         hamburger.innerHTML = HamburgerSVG()
         drawer.style.borderBottom = "none"
-        drawer.style.height = "0px"
+        drawer.style.maxHeight = "0px"
     }
 })
 
